@@ -238,7 +238,7 @@
 
     
         <meta property="article:published_time" content="Fri Apr 21 2017 00:00:00 GMT+0800" />
-        <meta property="article:modified_time" content="Wed Sep 20 2017 16:00:28 GMT+0800" />
+        <meta property="article:modified_time" content="Wed Sep 20 2017 17:23:59 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
@@ -265,7 +265,7 @@
     "mainEntityOfPage": "https://serical.github.io/2017/04/21/MySQL压缩版安装/index.html",
     "headline": "MySQL压缩版安装",
     "datePublished": "Fri Apr 21 2017 00:00:00 GMT+0800",
-    "dateModified": "Wed Sep 20 2017 16:00:28 GMT+0800",
+    "dateModified": "Wed Sep 20 2017 17:23:59 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "John Doe",
@@ -292,6 +292,14 @@
     
 
     <!-- Analytics -->
+    
+        <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-106772772-1', 'auto');ga('send', 'pageview');
+</script>
     
     
     
@@ -349,7 +357,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一、下载相关文件"><span class="post-toc-number">1.</span> <span class="post-toc-text">一、下载相关文件</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二、配置环境"><span class="post-toc-number">2.</span> <span class="post-toc-text">二、配置环境</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#三、初始化数据库"><span class="post-toc-number">3.</span> <span class="post-toc-text">三、初始化数据库</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#四、添加为系统服务"><span class="post-toc-number">4.</span> <span class="post-toc-text">四、添加为系统服务</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#五、登录并修改密码"><span class="post-toc-number">5.</span> <span class="post-toc-text">五、登录并修改密码</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一、下载相关文件"><span class="post-toc-number">1.</span> <span class="post-toc-text">一、下载相关文件</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二、配置环境"><span class="post-toc-number">2.</span> <span class="post-toc-text">二、配置环境</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#三、初始化数据库"><span class="post-toc-number">3.</span> <span class="post-toc-text">三、初始化数据库</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#四、添加为系统服务"><span class="post-toc-number">4.</span> <span class="post-toc-text">四、添加为系统服务</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#五、登录并修改密码"><span class="post-toc-number">5.</span> <span class="post-toc-text">五、登录并修改密码</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#六、可能出现的错误"><span class="post-toc-number">6.</span> <span class="post-toc-text">六、可能出现的错误</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#七、解决方法"><span class="post-toc-number">7.</span> <span class="post-toc-text">七、解决方法</span></a></li></ol>
     </ul>
     
 
@@ -543,6 +551,8 @@ mysql -u root -p
 mysql<span class="token operator">></span> <span class="token keyword">set</span> password <span class="token keyword">for</span> root@localhost <span class="token operator">=</span> password<span class="token punctuation">(</span><span class="token string">'123456'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 Query OK, 0 rows affected, 1 warning <span class="token punctuation">(</span>0.00 sec<span class="token punctuation">)</span>
 </code></pre>
+<h3 id="六、可能出现的错误"><a href="#六、可能出现的错误" class="headerlink" title="六、可能出现的错误"></a>六、可能出现的错误</h3><p>无法启动此程序，因为计算机中丢失MSVCR120.dll。请重新安装该程序已解决问题</p>
+<h3 id="七、解决方法"><a href="#七、解决方法" class="headerlink" title="七、解决方法"></a>七、解决方法</h3><p><a href="https://www.microsoft.com/en-us/download/details.aspx?id=40784" target="_blank" rel="external">下载</a>安装重新进行第三步</p>
 
         
     
@@ -592,7 +602,7 @@ Query OK, 0 rows affected, 1 warning <span class="token punctuation">(</span>0.0
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2017/04/21/Maven本地仓库添加jar/" id="post_nav-newer" class="prev-content">
+        <a href="/2017/04/24/Oracle DROP闪回/" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
@@ -606,7 +616,7 @@ Query OK, 0 rows affected, 1 warning <span class="token punctuation">(</span>0.0
 
     <!-- Next Nav -->
     
-        <a href="/2017/04/21/PSFTP上传文件/" id="post_nav-older" class="next-content">
+        <a href="/2017/04/21/Java技能图谱/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
